@@ -60,7 +60,7 @@ A codebook for the dataset is given below:
 - perc_low_wage_jobs: % in low-wage service jobs (out of total)
 
 ### Code for the Analysis
-``` {r code, echo = TRUE, results = "hide}
+``` {r code, echo = TRUE, results = "hide"}
 dance_start(value = FALSE, contents = FALSE)
 View(college)
 str(college)
@@ -68,7 +68,6 @@ plot(as.factor(college$major_category), college$median)
 fit <- lm(median ~ as.factor(major_category), data = college)
 summary(fit)
 plot(fit, which = 1)
-dance_save("~/Desktop/college_major_analysis.rds")
 ```
 
 **Question: Based on your analysis, would you conclude that there is a significant association between college major category and income?**
