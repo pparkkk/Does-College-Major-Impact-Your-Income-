@@ -59,6 +59,9 @@ A codebook for the dataset is given below:
 - perc_non_college_jobs: % with job not requiring a college degree (out of employed)
 - perc_low_wage_jobs: % in low-wage service jobs (out of total)
 
+**Question: Based on your analysis, would you conclude that there is a significant association between college major category and income?**
+
+Answer: I have investigated the linear relationship between the college major category (major_category) as the predictor and the median income (median) as the outcome. Using the function lm, it has shown in the p-values column of the coefficients section that most of the p-values are larger than 0.05. Hence, suggesting that the relationship is not significant. Also, from the residual plot for median income against the major category, it doesn't seem to have any particular pattern either. **This reinforces the claim that the college major category has no significant impact on median income.**
 
 
 
